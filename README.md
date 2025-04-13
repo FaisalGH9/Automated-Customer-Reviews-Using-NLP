@@ -1,57 +1,41 @@
 # Automation-Automated-Customer-Reviews-Using-NLP
 Automated Customer Reviews: Product Category Clustering Using NLP
 
-Project Overview
+# Project Overview
 
-This project focuses on automatically clustering products into meaningful categories based on product names, categories, and reviews using advanced Natural Language Processing (NLP) techniques.
+## This project focuses on automatically clustering products into meaningful categories based on product names, categories, and reviews using advanced Natural Language Processing (NLP) techniques.
+## The final output enables better product organization and summarization.
 
-The final output enables better product organization and summarization.
+# Technologies Used
 
-Technologies Used
+- Python
+- Pandas, NumPy
+- Sentence-BERT (MiniLM-L6-v2)
+- HDBSCAN
+- KMeans
+- Scikit-learn
+- UMAP
+- NLTK (Text preprocessing)
 
-Python
-
-Pandas, NumPy
-
-Sentence-BERT (MiniLM-L6-v2)
-
-HDBSCAN
-
-KMeans
-
-Scikit-learn
-
-UMAP
-
-NLTK (Text preprocessing)
-
-Project Workflow
-
-Text Preprocessing
-
-Removed noise words and cleaned product names and categories.
-
-Applied lemmatization and advanced stopword filtering.
-
-Embedding Generation
-
+# Project Workflow
+### Text Preprocessing
+- Removed noise words and cleaned product names and categories.
+- Applied lemmatization and advanced stopword filtering.
+  
+### Embedding Generation
 Converted text into dense vector representations using Sentence-BERT (MiniLM-L6-v2).
 
-Initial Clustering
-
+### Initial Clustering
 Used HDBSCAN to create the initial clusters.
-
 Handled noise and small cluster sizes.
 
-Cluster Refinement
-
+### Cluster Refinement
 Applied a custom BestKFinder to optimize cluster numbers using Silhouette Score.
 
-Keyword Extraction
-
+### Keyword Extraction
 Extracted top keywords from each final cluster for easy summarization.
 
-Experiments
+# Experiments
 
 Approach
 
