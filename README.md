@@ -37,39 +37,12 @@ Extracted top keywords from each final cluster for easy summarization.
 
 # Experiments
 
-Approach
+## Approach
 
-Silhouette Score
+![image](https://github.com/user-attachments/assets/2e49949c-dc82-4412-89f9-0ecd1d28fe38)
 
-Clusters
 
-Noise Points
-
-Product Name + Categories
-
-99%
-
-22
-
-709
-
-Reviews Text + Categories
-
-36%
-
-4
-
-14070
-
-Categories Only
-
-99%
-
-19
-
-538
-
-Selected Approach: Product Name + Categories
+## Selected Approach: Product Name + Categories
 
 Reason: Best balance between cluster quality, semantic richness, and minimal noise.
 
