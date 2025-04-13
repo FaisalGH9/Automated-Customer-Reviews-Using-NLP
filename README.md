@@ -67,6 +67,10 @@ Summaries are saved as downloadable **PDFs**.
   - Downloading summaries as PDFs
 - Loading screen and summary dropdown included
 ---
+
+#### HERE ARE THE LINK FOR THE FULL PROJECT
+https://drive.google.com/drive/folders/1mlPeeFni8JPLnuOtHL-goh0CicQpy_V6?usp=drive_link
+
 ## :package: Requirements
 Install all dependencies using:
 ```bash
