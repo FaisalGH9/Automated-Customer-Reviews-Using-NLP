@@ -18,31 +18,30 @@ Automated Customer Reviews: Product Category Clustering Using NLP
 - NLTK (Text preprocessing)
 
 # Project Workflow
-### Text Preprocessing
-- Removed noise words and cleaned product names and categories.
-- Applied lemmatization and advanced stopword filtering.
-  
-### Embedding Generation
-Converted text into dense vector representations using Sentence-BERT (MiniLM-L6-v2).
 
-### Initial Clustering
-Used HDBSCAN to create the initial clusters.
-Handled noise and small cluster sizes.
+## 1. Text Preprocessing
+- Clean product names and categories by removing noise words, numbers, and special characters.
+- Apply lemmatization and advanced stopword filtering.
 
-### Cluster Refinement
-Applied a custom BestKFinder to optimize cluster numbers using Silhouette Score.
+## 2. Text Embedding
+- Convert the cleaned text into semantic vectors using Sentence-BERT (MiniLM-L6-v2).
 
-### Keyword Extraction
-Extracted top keywords from each final cluster for easy summarization.
+## 3. Initial Clustering (HDBSCAN)
+- Apply HDBSCAN to detect dense clusters without requiring the number of clusters in advance.
 
-# Experiments
+## 4. Cluster Refinement (BestKFinder)
+- Refine the initial clusters using KMeans based on the best Cosine Silhouette Score.
 
-## Approach
+## 5. Visualization
+- Use UMAP to reduce embeddings into 2D for cluster visualization.
 
-![image](https://github.com/user-attachments/assets/2e49949c-dc82-4412-89f9-0ecd1d28fe38)
+## 6. Keyword Extraction
+- Extract the top keywords from each cluster for better interpretability.
 
+# Final Output
 
-## Selected Approach: Product Name + Categories
+- Final clustered dataset with meaningful meta-categories.
+- Each product labeled with a cluster for downstream summarization and recommendation tasks.
 
 Reason: Best balance between cluster quality, semantic richness, and minimal noise.
 
